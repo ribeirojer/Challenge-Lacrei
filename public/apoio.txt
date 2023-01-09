@@ -1,0 +1,53 @@
+# Desafio Lacrei - Front end
+
+### Boas-vindas ao desafio Front-end da Lacrei ✨
+
+### **Objetivo do desafio:**
+
+Avaliar sua capacidade de escrever código limpo, bem estruturado e reutilizável. 
+
+### Tarefas:
+
+1. Replicar layout de acordo com figma
+2. Executar navegação entre as telas
+3. Fazer deploy da aplicação
+
+### Recursos**:**
+
+**[Figma](https://www.figma.com/file/rinPq1hNUad5M5P4B9Sl23/Desafio?node-id=2%3A15&t=apIxxo3pcKbKGRX4-0)**: Acesse o figma para ter acesso ao layout 
+
+[**Aplicação**](https://desafio-lacrei-five.vercel.app): Confira como deve ficar a aplicação após ser finalizada
+
+### Ferramentas requeridas**:**
+
+1. React, Gatsby ou Next.js
+2. Styled-components
+
+### ****Aspectos técnicos:****
+
+Todas as ferramentas listadas anteriormente são mandatórias, além delas sinta-se livre para utilizar de qualquer outra tecnologia.
+
+### Bônus:
+
+1. Entregar uma aplicação responsiva
+2. Utilizar TypeScript
+3. Implementar testes
+
+### Deploy:
+
+Ao finalizar, faça o deploy (exemplo: Vercel, Netlify, Heroku, Amazon EC2…)
+
+### Entrega:
+
+1. Enviar link do repositório (github ou gitlab)
+2. Enviar link do deploy
+
+**Prazo para o nosso desafio são de 7 dias a partir do recebimento, enviar resolução para dh@portallacrei.com.br** 
+
+**E-mail para dúvidas e o desafio solucionado para: dh@portallacrei.com.br**
+
+**A atividade voluntária consiste em um termo de voluntariado com duração de 3 meses, com 10 horas semanais.**
+
+**Os encontros via Zoom dois semanais: Segundas e Quartas das 19 horas às 20 horas.**
+
+**Emissão de certificado ao final do voluntariado com presença superior a 80%.**
