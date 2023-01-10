@@ -1,6 +1,9 @@
+import { ReactNode } from "react";
 import styled from "styled-components";
 
-type Props = {};
+type Props = {
+  children: ReactNode;
+};
 
 const Wrapper = styled.p`
   font-weight: 700;
@@ -9,7 +12,7 @@ const Wrapper = styled.p`
   color: #1f1f1f;
 `;
 
-const Title = ({ children }: any) => {
+const Title = ({ children }: Props) => {
   return <Wrapper>{children}</Wrapper>;
 };
 

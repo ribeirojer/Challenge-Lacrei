@@ -1,7 +1,9 @@
+import { ReactNode } from "react";
 import styled from "styled-components";
 
 type Props = {
-  width: string;
+  width: string;  
+  children: ReactNode;
 };
 
 const Wrapper = styled.p`
@@ -12,7 +14,7 @@ const Wrapper = styled.p`
   width: ${(props) => props.itemProp};
 `;
 
-const Content = ({ width, children }: any) => {
+const Content = ({ width, children }: Props) => {
   return <Wrapper itemProp={width}>{children}</Wrapper>;
 };
 

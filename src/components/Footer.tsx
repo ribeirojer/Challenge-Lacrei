@@ -55,9 +55,9 @@ const Footer = (props: Props) => {
         <span>Profissional</span>
       </div>
       <div className="logos">
-        <FacebookLogo size={24} />
-        <InstagramLogo size={24} />
-        <LinkedinLogo size={24} />
+        <FacebookLogo size={32} />
+        <InstagramLogo size={32} />
+        <LinkedinLogo size={32} />
       </div>
       <p>Desafio Front-end Lacrei</p>
     </Wrapper>

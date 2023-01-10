@@ -1,9 +1,10 @@
+import { ReactNode } from "react";
 import styled from "styled-components";
 
 type Props = {
   color: string;
   theme: string;
-  text: string;
+  children: ReactNode;
 };
 
 const Wrapper = styled.button`
@@ -25,10 +26,10 @@ const Wrapper = styled.button`
   }
 `;
 
-const Button = ({ color, theme, text }: Props) => {
+const Button = ({ color, theme, children }: Props) => {
   return (
     <Wrapper color={color} theme={theme}>
-      {text}
+      {children}
     </Wrapper>
   );
 };
