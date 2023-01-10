@@ -14,14 +14,9 @@ const Wrapper = styled.header`
     width: 550px;
   }
   .wrapper div {
-    display: flex;
     margin-top: 2rem;
-    gap: 24px;
-  }
-  .line {
-    width: 5px;
-    height: 132px;
-    background: #018762;
+    padding-left: 24px;
+    border-left: 5px solid #018762;
   }
 `;
 
@@ -35,7 +30,6 @@ const Professional = (props: Props) => {
       <div className="wrapper">
         <Title>Profissional</Title>
         <div>
-          <span className="line"></span>
           <Content width={"521px"}>
             A Lacrei garante que pessoas LGBTQIAPN + recebam atendimento
             realizado por profissionais de qualidade e que atendam às suas

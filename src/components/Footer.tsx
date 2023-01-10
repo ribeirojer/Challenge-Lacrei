@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 type Props = {};
 
-const Wrapper = styled.header`
+const Wrapper = styled.footer`
   display: flex;
   flex-direction: column;
   padding-left: 4rem;

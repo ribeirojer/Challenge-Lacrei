@@ -5,7 +5,7 @@ type Props = {
   children: ReactNode;
 };
 
-const Wrapper = styled.p`
+const Wrapper = styled.h1`
   font-weight: 700;
   font-size: 48px;
   line-height: 65px;
