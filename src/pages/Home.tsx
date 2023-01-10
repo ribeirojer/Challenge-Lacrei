@@ -11,16 +11,20 @@ type Props = {};
 
 const Wrapper = styled.header`
   display: flex;
-  gap: 230px;
-  padding: 4rem 4rem 0 4rem;
+  flex-direction: column;
+  .container {
+    margin: 4rem 4rem 0 4rem;
+    gap: 230px;
+    display: flex;
+  }
   .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     width: 453px;
   }
-  .wrapper p {
-    margin-bottom: 2rem;
-  }
   .wrapper div {
-    margin-top: 3rem;
+    margin-top: 1rem;
     display: flex;
     gap: 69px;
   }
@@ -33,21 +37,25 @@ const Home = (props: Props) => {
 
   return (
     <Wrapper>
-      <div className="wrapper">
-        <Title>Boas vindas a Lacrei Saúde</Title>
-        <Content width={"403px"}>
-          Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+
-        </Content>
-        <div>
-          <Button color={"#ffffff"} theme={"#018762"}>
-            Pessoa Usuária
-          </Button>
-          <Button color={"#018762"} theme={"#ffffff"}>
-            Profissional
-          </Button>
+      <Header />
+      <div className="container">
+        <div className="wrapper">
+          <Title>Boas vindas a Lacrei Saúde</Title>
+          <Content width={"403px"}>
+            Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+
+          </Content>
+          <div>
+            <Button color={"#ffffff"} theme={"#018762"}>
+              Pessoa Usuária
+            </Button>
+            <Button color={"#018762"} theme={"#ffffff"}>
+              Profissional
+            </Button>
+          </div>
         </div>
+        <img src={imagem} alt="" />
       </div>
-      <img src={imagem} alt="" />
+      <Footer />
     </Wrapper>
   );
 };

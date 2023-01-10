@@ -1,4 +1,6 @@
 import { FacebookLogo, InstagramLogo, LinkedinLogo } from "phosphor-react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 type Props = {};
@@ -6,14 +8,8 @@ type Props = {};
 const Wrapper = styled.footer`
   display: flex;
   flex-direction: column;
-  padding-left: 4rem;
-  .line {
-    margin-top: 1rem;
-    width: 1238px;
-    height: 1px;
-    margin-right: 4rem;
-    background: #b0e0d3;
-  }
+  margin: 0 4rem;
+  border-top: 1px solid #b0e0d3;
   .navbar {
     display: flex;
     margin-top: 2rem;
@@ -46,13 +42,35 @@ const Wrapper = styled.footer`
 `;
 
 const Footer = (props: Props) => {
+  const [first, setfirst] = useState<string>(window.location.pathname);
+  const navigate = useNavigate();
+
+  function handleNavigate(link: string) {
+    setfirst(link);
+    navigate(link);
+  }
+
   return (
     <Wrapper>
-      <div className="line"></div>
       <div className="navbar">
-        <span className="bold">Home</span>
-        <span>Pessoa Usuária</span>
-        <span>Profissional</span>
+        <span
+          className={`${first === "/" && "bold"}`}
+          onClick={() => handleNavigate("/")}
+        >
+          Home
+        </span>
+        <span
+          className={`${first === "/pessoa" && "bold"}`}
+          onClick={() => handleNavigate("/pessoa")}
+        >
+          Pessoa Usuária
+        </span>
+        <span
+          className={`${first === "/profissional" && "bold"}`}
+          onClick={() => handleNavigate("/profissional")}
+        >
+          Profissional
+        </span>
       </div>
       <div className="logos">
         <FacebookLogo size={32} />

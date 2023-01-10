@@ -3,13 +3,19 @@ import Title from "../components/Title";
 import imagem from "../assets/img3.svg";
 import styled from "styled-components";
 import { useEffect } from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 type Props = {};
 
 const Wrapper = styled.header`
   display: flex;
-  justify-content: space-between;
-  padding: 4rem 4rem 0 4rem;
+  flex-direction: column;
+  .container {
+    margin: 4rem 4rem 0 4rem;
+    display: flex;
+    justify-content: space-between;
+  }
   .wrapper {
     width: 550px;
   }
@@ -27,17 +33,21 @@ const Professional = (props: Props) => {
 
   return (
     <Wrapper>
-      <div className="wrapper">
-        <Title>Profissional</Title>
-        <div>
-          <Content width={"521px"}>
-            Buscamos recrutar pessoas profissionais da saúde que entendam as
-            necessidades e se comprometam com o bem-estar da comunidade
-            LGBTQIAPN+
-          </Content>
+      <Header />
+      <div className="container">
+        <div className="wrapper">
+          <Title>Profissional</Title>
+          <div>
+            <Content width={"521px"}>
+              Buscamos recrutar pessoas profissionais da saúde que entendam as
+              necessidades e se comprometam com o bem-estar da comunidade
+              LGBTQIAPN+
+            </Content>
+          </div>
         </div>
+        <img src={imagem} alt="" />
       </div>
-      <img src={imagem} alt="" />
+      <Footer />
     </Wrapper>
   );
 };

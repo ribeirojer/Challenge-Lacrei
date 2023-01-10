@@ -3,13 +3,19 @@ import Content from "../components/Content";
 import Title from "../components/Title";
 import imagem from "../assets/img2.svg";
 import { useEffect } from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 type Props = {};
 
 const Wrapper = styled.header`
   display: flex;
-  justify-content: space-between;
-  padding: 4rem 4rem 0 4rem;
+  flex-direction: column;
+  .container {
+    margin: 4rem 4rem 0 4rem;
+    display: flex;
+    justify-content: space-between;
+  }
   .wrapper p {
     margin-top: 2rem;
     padding-left: 24px;
@@ -24,15 +30,19 @@ const Person = (props: Props) => {
 
   return (
     <Wrapper>
-      <div className="wrapper">
-        <Title>Pessoa Usuária</Title>
-        <Content width={"550px"}>
-          A Lacrei garante que pessoas LGBTQIAPN + recebam atendimento realizado
-          por profissionais de qualidade e que atendam às suas necessidades de
-          forma segura e acolhedora.
-        </Content>
+      <Header />
+      <div className="container">
+        <div className="wrapper">
+          <Title>Pessoa Usuária</Title>
+          <Content width={"550px"}>
+            A Lacrei garante que pessoas LGBTQIAPN + recebam atendimento
+            realizado por profissionais de qualidade e que atendam às suas
+            necessidades de forma segura e acolhedora.
+          </Content>
+        </div>
+        <img src={imagem} alt="" />
       </div>
-      <img src={imagem} alt="" />
+      <Footer />
     </Wrapper>
   );
 };
