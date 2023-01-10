@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-type Props = {};
+type Props = {
+  color: string;
+  theme: string;
+  text: string;
+};
 
 const Wrapper = styled.button`
   width: 192px;
@@ -21,15 +25,7 @@ const Wrapper = styled.button`
   }
 `;
 
-const Button = ({
-  color,
-  theme,
-  text,
-}: {
-  color: string;
-  theme: string;
-  text: string;
-}) => {
+const Button = ({ color, theme, text }: Props) => {
   return (
     <Wrapper color={color} theme={theme}>
       {text}

@@ -1,18 +1,19 @@
 import styled from "styled-components";
 
-type Props = {};
+type Props = {
+  width: string;
+};
 
 const Wrapper = styled.p`
-  margin: 2rem 0 3rem 0;
   font-weight: 400;
   font-size: 24px;
   line-height: 33px;
-  width: 452px;
   color: #515151;
+  width: ${(props) => props.itemProp};
 `;
 
-const Content = ({ children }: any) => {
-  return <Wrapper>{children}</Wrapper>;
+const Content = ({ width, children }: any) => {
+  return <Wrapper itemProp={width}>{children}</Wrapper>;
 };
 
 export default Content;
