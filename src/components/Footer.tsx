@@ -4,12 +4,11 @@ import styled from "styled-components";
 type Props = {};
 
 const Wrapper = styled.header`
-  position: absolute;
-  bottom: 8px;
   display: flex;
   flex-direction: column;
   padding-left: 4rem;
   .line {
+    margin-top: 1rem;
     width: 1238px;
     height: 1px;
     margin-right: 4rem;
@@ -17,7 +16,7 @@ const Wrapper = styled.header`
   }
   .navbar {
     display: flex;
-    margin: 2rem 0 0 0;
+    margin-top: 2rem;
     gap: 40px;
   }
   div span {
@@ -29,7 +28,7 @@ const Wrapper = styled.header`
   }
   .logos {
     display: flex;
-    margin: 28px 0 28px 0;
+    margin: 28px 0;
     gap: 40px;
     color: #018762;
   }
@@ -38,8 +37,8 @@ const Wrapper = styled.header`
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-
     color: #515151;
+    margin-bottom: 8px;
   }
   .bold {
     font-weight: 700;
