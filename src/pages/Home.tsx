@@ -3,6 +3,7 @@ import Button from "../components/Button";
 import Content from "../components/Content";
 import Title from "../components/Title";
 import imagem from "../assets/img1.svg";
+import { useEffect } from "react";
 
 type Props = {};
 
@@ -24,6 +25,10 @@ const Wrapper = styled.header`
 `;
 
 const Home = (props: Props) => {
+  useEffect(() => {
+    document.title = "Home | Desafio Lacrei";
+  });
+
   return (
     <Wrapper>
       <div className="wrapper">

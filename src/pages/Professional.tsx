@@ -2,6 +2,7 @@ import Content from '../components/Content';
 import Title from '../components/Title';
 import imagem from "../assets/img3.svg";
 import styled from 'styled-components';
+import { useEffect } from 'react';
 
 type Props = {};
 
@@ -25,6 +26,10 @@ const Wrapper = styled.header`
 `;
 
 const Professional = (props: Props) => {
+  useEffect(() => {
+    document.title = "Profissional | Desafio Lacrei";
+  });
+
   return (
     <Wrapper>
       <div className="wrapper">
