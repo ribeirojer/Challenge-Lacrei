@@ -33,7 +33,7 @@ const Wrapper = styled.footer`
   }
 
   @media (max-width: 1040px) {
-    margin: 2.5rem 2rem 0.5rem 2rem;
+    margin: 1rem 2rem 0.5rem 2rem;
   }
   @media (max-width: 520px) {
     font-size: 0.875rem;
