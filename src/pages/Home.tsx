@@ -4,6 +4,8 @@ import Content from "../components/Content";
 import Title from "../components/Title";
 import imagem from "../assets/img1.svg";
 import { useEffect } from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 type Props = {};
 

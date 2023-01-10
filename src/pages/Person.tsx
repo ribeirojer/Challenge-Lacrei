@@ -21,6 +21,7 @@ const Person = (props: Props) => {
   useEffect(() => {
     document.title = "Pessoa Usuária | Desafio Lacrei";
   });
+
   return (
     <Wrapper>
       <div className="wrapper">

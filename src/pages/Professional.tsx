@@ -1,8 +1,8 @@
-import Content from '../components/Content';
-import Title from '../components/Title';
+import Content from "../components/Content";
+import Title from "../components/Title";
 import imagem from "../assets/img3.svg";
-import styled from 'styled-components';
-import { useEffect } from 'react';
+import styled from "styled-components";
+import { useEffect } from "react";
 
 type Props = {};
 
@@ -31,15 +31,15 @@ const Professional = (props: Props) => {
         <Title>Profissional</Title>
         <div>
           <Content width={"521px"}>
-            A Lacrei garante que pessoas LGBTQIAPN + recebam atendimento
-            realizado por profissionais de qualidade e que atendam às suas
-            necessidades de forma segura e acolhedora.
+            Buscamos recrutar pessoas profissionais da saúde que entendam as
+            necessidades e se comprometam com o bem-estar da comunidade
+            LGBTQIAPN+
           </Content>
         </div>
       </div>
       <img src={imagem} alt="" />
     </Wrapper>
-  )
-}
+  );
+};
 
 export default Professional;
