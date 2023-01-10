@@ -6,10 +6,11 @@ import imagem from "../assets/img1.svg";
 import { useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 type Props = {};
 
-const Wrapper = styled.header`
+const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   .container {
@@ -28,6 +29,27 @@ const Wrapper = styled.header`
     display: flex;
     gap: 69px;
   }
+
+  @media (max-width: 1040px) {
+    .container {
+      margin: 2rem 2rem 0 2rem;
+      flex-direction: column;
+      gap: 0;
+    }
+    .wrapper {
+      gap: 0;
+    }
+    .wrapper div {
+      margin: 3rem 0 2rem;
+    }
+  }
+  @media (max-width: 520px) {
+    .welcome div {
+      margin-top: 0rem;
+      display: flex;
+      flex-direction: column;
+    }
+  }
 `;
 
 const Home = (props: Props) => {
@@ -38,23 +60,27 @@ const Home = (props: Props) => {
   return (
     <Wrapper>
       <Header />
-      <div className="container">
+      <main className="container">
         <div className="wrapper">
           <Title>Boas vindas a Lacrei Saúde</Title>
           <Content width={"403px"}>
             Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+
           </Content>
           <div>
-            <Button color={"#ffffff"} theme={"#018762"}>
-              Pessoa Usuária
-            </Button>
-            <Button color={"#018762"} theme={"#ffffff"}>
-              Profissional
-            </Button>
+            <Link to={"/pessoa"}>
+              <Button color={"#ffffff"} theme={"#018762"}>
+                Pessoa Usuária
+              </Button>
+            </Link>
+            <Link to={"/profissional"}>
+              <Button color={"#018762"} theme={"#ffffff"}>
+                Profissional
+              </Button>
+            </Link>
           </div>
         </div>
         <img src={imagem} alt="" />
-      </div>
+      </main>
       <Footer />
     </Wrapper>
   );

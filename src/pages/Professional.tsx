@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 
 type Props = {};
 
-const Wrapper = styled.header`
+const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   .container {
@@ -34,7 +34,7 @@ const Professional = (props: Props) => {
   return (
     <Wrapper>
       <Header />
-      <div className="container">
+      <main className="container">
         <div className="wrapper">
           <Title>Profissional</Title>
           <div>
@@ -46,7 +46,7 @@ const Professional = (props: Props) => {
           </div>
         </div>
         <img src={imagem} alt="" />
-      </div>
+      </main>
       <Footer />
     </Wrapper>
   );

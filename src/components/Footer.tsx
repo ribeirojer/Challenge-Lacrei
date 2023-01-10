@@ -8,7 +8,7 @@ type Props = {};
 const Wrapper = styled.footer`
   display: flex;
   flex-direction: column;
-  margin: 0 4rem;
+  margin: 0 4rem 0.5rem 4rem;
   border-top: 1px solid #b0e0d3;
   .navbar {
     display: flex;
@@ -16,28 +16,27 @@ const Wrapper = styled.footer`
     gap: 40px;
   }
   div span {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
     color: #1f1f1f;
+    cursor: pointer;
   }
-  .logos {
-    display: flex;
-    margin: 28px 0;
-    gap: 40px;
+  .logos svg {
+    margin: 23px 30px 23px 0;
     color: #018762;
   }
   p {
-    font-style: normal;
-    font-weight: 400;
     font-size: 12px;
     line-height: 16px;
     color: #515151;
-    margin-bottom: 8px;
   }
   .bold {
     font-weight: 700;
+  }
+
+  @media (max-width: 1040px) {
+  margin: 2.5rem 2rem 0.5rem 2rem;
+  }
+  @media (max-width: 520px) {
+    font-size: 1.5rem;
   }
 `;
 

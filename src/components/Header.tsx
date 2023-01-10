@@ -8,7 +8,7 @@ const Wrapper = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  min-height: 60px;
   padding: 0 4rem;
   background-color: #eeeeee;
 
@@ -20,7 +20,7 @@ const Wrapper = styled.header`
   }
   ul {
     display: flex;
-    gap: 40px;
+    gap: 2.5rem;
   }
   ul li {
     list-style-type: none;
@@ -33,6 +33,20 @@ const Wrapper = styled.header`
   }
   .cor {
     color: #018762;
+  }
+
+  @media (max-width: 1040px) {
+    padding: 0.5rem 2rem;
+    ul {
+      gap: 2rem;
+    }
+  }
+  @media (max-width: 520px) {
+    
+    flex-direction: column;
+    ul {
+      gap: 1rem;
+    }
   }
 `;
 
