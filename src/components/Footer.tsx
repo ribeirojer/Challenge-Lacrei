@@ -33,10 +33,22 @@ const Wrapper = styled.footer`
   }
 
   @media (max-width: 1040px) {
-  margin: 2.5rem 2rem 0.5rem 2rem;
+    margin: 2.5rem 2rem 0.5rem 2rem;
   }
   @media (max-width: 520px) {
-    font-size: 1.5rem;
+    font-size: 0.875rem;
+    margin: 2.5rem 1rem 0.5rem 1rem;
+    .navbar {
+      flex-direction: column;
+      margin-top: 1rem;
+      gap: 0.25rem;
+    }
+    .logos svg {
+      margin: 0.5rem 2rem 0.5rem 0;
+    }
+    div span {
+      height: 19px;
+    }
   }
 `;
 

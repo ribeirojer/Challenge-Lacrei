@@ -19,7 +19,10 @@ const Wrapper = styled.p`
     font-size: 1rem;
   }
   @media (max-width: 520px) {
-    font-size: 1.5rem;
+    line-height: 1.25rem;
+    margin-top: 0.875rem;
+    font-size: 0.875rem;    
+    width: 434px;
   }
 `;
 

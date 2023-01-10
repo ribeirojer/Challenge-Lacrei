@@ -17,6 +17,7 @@ const Wrapper = styled.h1`
   }
   @media (max-width: 520px) {
     font-size: 1.5rem;
+    line-height: 2rem;
   }
 `;
 

@@ -42,10 +42,13 @@ const Wrapper = styled.header`
     }
   }
   @media (max-width: 520px) {
-    
     flex-direction: column;
+    height: 78px;
     ul {
       gap: 1rem;
+    }
+    ul li {
+      font-size: 0.875rem;
     }
   }
 `;

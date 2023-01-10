@@ -49,6 +49,14 @@ const Wrapper = styled.div`
       display: flex;
       flex-direction: column;
     }
+    .container {
+      margin: 1rem 2rem 0 2rem;
+    }
+    .wrapper div {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
   }
 `;
 
