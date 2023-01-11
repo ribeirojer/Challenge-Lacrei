@@ -17,12 +17,37 @@ const Wrapper = styled.div`
     justify-content: space-between;
   }
   .wrapper {
-    width: 550px;
+    max-width: 550px;
   }
-  .wrapper div {
+  .wrapper p {
     margin-top: 2rem;
     padding-left: 24px;
     border-left: 5px solid #018762;
+  }
+
+  @media (max-width: 1040px) {
+    .container {
+      margin: 2rem 2rem 0 2rem;
+      flex-direction: column;
+      gap: 0;
+    }
+    .wrapper p {
+      margin: 1rem 0 0.5rem;
+      padding-left: 1rem;
+    }
+  }
+  @media (max-width: 520px) {
+    .welcome div {
+      margin-top: 0rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .container {
+      margin: 1rem 1rem 0 1rem;
+    }
+    .wrapper p {
+      margin: 1rem 0 2rem;
+    }
   }
 `;
 
@@ -37,13 +62,11 @@ const Professional = (props: Props) => {
       <main className="container">
         <div className="wrapper">
           <Title>Profissional</Title>
-          <div>
-            <Content width={"521px"}>
-              Buscamos recrutar pessoas profissionais da saúde que entendam as
-              necessidades e se comprometam com o bem-estar da comunidade
-              LGBTQIAPN+
-            </Content>
-          </div>
+          <Content width={"521px"}>
+            Buscamos recrutar pessoas profissionais da saúde que entendam as
+            necessidades e se comprometam com o bem-estar da comunidade
+            LGBTQIAPN+
+          </Content>
         </div>
         <img src={imagem} alt="" />
       </main>

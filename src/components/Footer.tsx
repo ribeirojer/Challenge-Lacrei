@@ -37,7 +37,7 @@ const Wrapper = styled.footer`
   }
   @media (max-width: 520px) {
     font-size: 0.875rem;
-    margin: 2.5rem 1rem 0.5rem 1rem;
+    margin: 2rem 1rem 0.5rem 1rem;
     .navbar {
       flex-direction: column;
       margin-top: 1rem;

@@ -11,7 +11,7 @@ const Wrapper = styled.p`
   font-size: 24px;
   line-height: 33px;
   color: #515151;
-  width: ${(props) => props.itemProp};
+  max-width: ${(props) => props.itemProp};
 
   @media (max-width: 1040px) {
     line-height: 1.5rem;
@@ -22,7 +22,7 @@ const Wrapper = styled.p`
     line-height: 1.25rem;
     margin-top: 0.875rem;
     font-size: 0.875rem;    
-    width: 434px;
+    max-width: 434px;
   }
 `;
 
