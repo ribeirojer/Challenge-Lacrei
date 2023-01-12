@@ -20,6 +20,7 @@ Olá! este repositório é destinado a resolução do Desafio Lacrei - Front end
 // Para executar o projeto
 git clone https://github.com/ribeirojer/Challenge-Lacrei.git
 cd Challenge-Lacrei
+npm install
 npm run dev
 
 // Para rodar testes
