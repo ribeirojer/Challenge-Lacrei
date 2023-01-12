@@ -19,7 +19,7 @@ describe("Content component", () => {
   it("should apply styles", () => {
     const { container } = render(<Content width={"550px"}>Click me</Content>);
     // as classes do styled-components tem nomes estranhos
-    // verificou só que elas existem no botão
+    // verificou só que elas existem no parágrafo
     const { children } = container;
     const classe = children.item(0)?.attributes.getNamedItem("class")?.value;
     expect(classe).toBeTruthy();

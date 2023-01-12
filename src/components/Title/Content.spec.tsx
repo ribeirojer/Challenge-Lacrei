@@ -12,7 +12,7 @@ describe("Title component", () => {
   it("should apply styles", () => {
     const { container } = render(<Title>Click me</Title>);
     // as classes do styled-components tem nomes estranhos
-    // verificou só que elas existem no botão
+    // verificou só que elas existem no h1
     const { children } = container;
     const classe = children.item(0)?.attributes.getNamedItem("class")?.value;
     expect(classe).toBeTruthy();
