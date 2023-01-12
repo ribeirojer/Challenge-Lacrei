@@ -12,6 +12,7 @@ describe("Button component", () => {
     );
     expect(container.firstChild?.textContent).toBe("Click me");
   });
+
   it("should apply the color prop", () => {
     const { container } = render(
       <Button color="#fff" theme="#000">
@@ -22,6 +23,7 @@ describe("Button component", () => {
     const color = children.item(0)?.attributes.getNamedItem("color")?.value;
     expect(color).toBe("#fff");
   });
+
   it("should apply the theme prop", () => {
     const { container } = render(
       <Button color="#fff" theme="#000">
