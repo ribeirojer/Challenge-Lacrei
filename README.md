@@ -16,6 +16,8 @@ Olá! este repositório é destinado a resolução do Desafio Lacrei - Front end
 2. Executar navegação entre as telas (utilizado react-router-dom) 
 3. Fazer deploy da aplicação ([Link](https://challenge-lacrei.vercel.app/))
 
+Obs: primeira aplização que realizo testes automatizados, desculpe se ficaram confusos.
+
 ```javascript
 // Para executar o projeto
 git clone https://github.com/ribeirojer/Challenge-Lacrei.git
